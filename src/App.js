@@ -34,7 +34,9 @@ Bigger image:
 ![React Logo w/ Text](https://goo.gl/Umyytc)
 `;
 
-
+marked.setOptions({
+  breaks: true,
+});
 
 class App extends React.Component {
 
