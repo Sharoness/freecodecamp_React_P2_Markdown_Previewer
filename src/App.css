@@ -1,33 +1,32 @@
-html {
-  background-color: black;
-}
-
 #editorWrap {
-  background-color: white;
+  
 }
 
 #editor {
-  background-color: yellow;
+  background-color: #cdecf5;
 }
 
 #previewWrap {
-  background-color: white;
 
 }
 
 #preview {
-  background-color: yellow;
+  background-color: #cdecf5;
 }
 
 #preview p {
   margin-bottom: 0px;
 }
 
-.header {
-  background-color: orange;
+#preview code {
+  background-color: white;
+}
+
+#preview pre {
+  background-color: white;
 }
 
 #root {
-  background-color: lightblue;
+  background-color: #5bc0de;
 }
 
