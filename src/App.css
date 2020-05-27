@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 #editorWrap {
   
 }
 
 #editor {
   background-color: #cdecf5;
+  font-family: 'PT Mono', monospace;
+  font-size: 12px;
+}
+
+#headerEditor {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
 }
 
 #previewWrap {
@@ -20,10 +30,17 @@
 
 #preview code {
   background-color: white;
+  font-family: 'PT Mono', monospace;
+  font-size: 12px;
 }
 
 #preview pre {
   background-color: white;
+}
+
+#headerPreview {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
 }
 
 #root {

@@ -75,13 +75,13 @@ class App extends React.Component {
       <Container id="container">
         <Row className="justify-content-center mb-4">
           <Col id="editorWrap" xs={6} className="p-0 mt-4 mb-3">
-            <div className="bg-primary text-center font-weight-bold">Editor</div>
+            <div className="bg-primary text-center font-weight-bold" id="headerEditor">Editor</div>
             <textarea className="w-100 h-100" id="editor" value={this.state.editorInput} onChange={this.handleChange} rows="10" />
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col id="previewWrap" className="p-0 mb-4">
-            <div className="bg-primary text-center font-weight-bold">Preview</div>
+            <div className="bg-primary text-center font-weight-bold" id="headerPreview">Preview</div>
             <div id="preview" className="pl-1" dangerouslySetInnerHTML={this.getMarkdownText()} />
           </Col>
         </Row>
