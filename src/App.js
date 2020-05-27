@@ -76,7 +76,7 @@ class App extends React.Component {
         <Row className="justify-content-center mb-4">
           <Col id="editorWrap" xs={6} className="p-0 mt-4 mb-3">
             <div className="bg-primary text-center font-weight-bold" id="headerEditor">Editor</div>
-            <textarea className="w-100 h-100" id="editor" value={this.state.editorInput} onChange={this.handleChange} rows="10" />
+            <textarea className="w-100" id="editor" value={this.state.editorInput} onChange={this.handleChange} rows="10" />
           </Col>
         </Row>
         <Row className="justify-content-center">
