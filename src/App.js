@@ -1,36 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const DEFAULT_TEXT = `# H1 Header 
-## Subheader
-Here's a link [Marked](https://marked.js.org/#/README.md) - marked.js
+const DEFAULT_TEXT = `# Welcome to my React Markdown Previewer!
+## This is a sub-heading
+### And here's some other cool stuff:
 
-Inline code \`<div>Some code here</div>\` goes here
+Heres some code, \`<div></div>\`, between 2 backticks.
 
-Code block:
-\`\`\`sh 
-$ cd dillinger
-$ npm install -d
-$ node app
 \`\`\`
-* Unordered list item
-* Another unordered list item
-1 Ordered sub-list item
-2 Another ordered sub-list item
+// this is multi-line code:
 
-#### Blockquote header
-> Throw in a blockquote
-> still blockquoting
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+  
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
 
-Here's an image:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+There's also [links](https://www.freecodecamp.com), and
+> Block Quotes!
 
-**This is bold text**
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
 
-Bigger image:
+
+1. And there are numbererd lists too.
+1. Use just 1s if you want! 
+1. But the list goes on...
+- Even if you use dashes or asterisks.
+* And last but not least, let's not forget embedded images:
+
 ![React Logo w/ Text](https://goo.gl/Umyytc)
 `;
 
@@ -59,13 +70,22 @@ class App extends React.Component {
     return {__html: marked(this.state.editorInput)};
   }
 
-
   render() {
     return (
-      <div>
-        <textarea id="editor" value={this.state.editorInput} onChange={this.handleChange} />
-        <div id="preview" dangerouslySetInnerHTML={this.getMarkdownText()} />
-      </div>
+      <Container id="container">
+        <Row className="justify-content-center ">
+          <Col id="editorWrap" xs={6} className="p-0 mt-4 mb-3 text-dark shadow rounded">
+            <div class="header">Editor</div>
+            <textarea className="w-100 p-0" id="editor" value={this.state.editorInput} onChange={this.handleChange} rows="10" />
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col id="previewWrap" className="p-0 mb-4">
+            <div class="header">Preview</div>
+            <div id="preview" dangerouslySetInnerHTML={this.getMarkdownText()} />
+          </Col>
+        </Row>
+      </Container>
     )
   }
 }
