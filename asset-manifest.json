@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/freecodecamp_React_P2_Markdown_Previewer/static/css/main.4468823c.chunk.css",
+    "main.js": "/freecodecamp_React_P2_Markdown_Previewer/static/js/main.391828aa.chunk.js",
+    "main.js.map": "/freecodecamp_React_P2_Markdown_Previewer/static/js/main.391828aa.chunk.js.map",
+    "runtime-main.js": "/freecodecamp_React_P2_Markdown_Previewer/static/js/runtime-main.15a937af.js",
+    "runtime-main.js.map": "/freecodecamp_React_P2_Markdown_Previewer/static/js/runtime-main.15a937af.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/freecodecamp_React_P2_Markdown_Previewer/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.541a0a00.chunk.js": "/freecodecamp_React_P2_Markdown_Previewer/static/js/2.541a0a00.chunk.js",
+    "static/js/2.541a0a00.chunk.js.map": "/freecodecamp_React_P2_Markdown_Previewer/static/js/2.541a0a00.chunk.js.map",
+    "index.html": "/freecodecamp_React_P2_Markdown_Previewer/index.html",
+    "precache-manifest.0ef0d606f98cb008322c197609e2bb34.js": "/freecodecamp_React_P2_Markdown_Previewer/precache-manifest.0ef0d606f98cb008322c197609e2bb34.js",
+    "service-worker.js": "/freecodecamp_React_P2_Markdown_Previewer/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/freecodecamp_React_P2_Markdown_Previewer/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.4468823c.chunk.css.map": "/freecodecamp_React_P2_Markdown_Previewer/static/css/main.4468823c.chunk.css.map",
+    "static/js/2.541a0a00.chunk.js.LICENSE.txt": "/freecodecamp_React_P2_Markdown_Previewer/static/js/2.541a0a00.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15a937af.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.541a0a00.chunk.js",
+    "static/css/main.4468823c.chunk.css",
+    "static/js/main.391828aa.chunk.js"
+  ]
+}
